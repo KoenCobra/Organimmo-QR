@@ -90,7 +90,12 @@ body {
 }
 
 .card {
-  padding: 0 1rem;
+  padding: 0 1.5rem;
+}
+@media (min-width: 600px) {
+  .card {
+    padding: 0 2rem;
+  }
 }
 .card .input {
   display: flex;
@@ -126,9 +131,11 @@ body {
 }
 .card .custom-file-upload {
   border: 1px solid #ccc;
+  width: max-content;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  margin: 0 auto;
   padding: 1rem 1.5rem;
   cursor: pointer;
   background-color: orange;
@@ -137,7 +144,7 @@ body {
 }
 .card .custom-file-upload p {
   font-size: 1.1rem;
-  margin-left: 0.5rem;
+  margin-left: 1.5rem;
 }
 .card h2 {
   color: white;
@@ -153,9 +160,9 @@ body {
   background-color: orange;
   border: 0;
   outline: none;
-  padding: 1.2rem 2rem;
+  padding: 1rem 1.8rem;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   border-radius: 10px;
   text-transform: uppercase;
 }
