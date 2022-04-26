@@ -12,7 +12,7 @@ body {
   object-fit: cover;
   font-family: $font;
 
-  @media (min-width: 1200px) {
+  @media (min-width: 1000px) {
     background-image: linear-gradient(rgba($backgroundColor, 0.82), rgba($backgroundColor, 0.72)),
       url(../../images/pexels-photo-323705.webp);
   }

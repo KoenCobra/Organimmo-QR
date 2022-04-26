@@ -84,7 +84,7 @@ body {
      object-fit: cover;
   font-family: "Roboto", sans-serif;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   body {
     background-image: linear-gradient(rgba(0, 89, 129, 0.82), rgba(0, 89, 129, 0.72)), url(../../images/pexels-photo-323705.webp);
   }
