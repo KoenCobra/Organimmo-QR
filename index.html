@@ -4,60 +4,82 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="src/scss/style.css" />
     <title>Organimmo QR</title>
   </head>
   <body>
     <main>
+      <div class="login">
+        <a href="https://dev-demo.eigenaar.check-it.immo/">
+          <i class="fa-regular fa-circle-user"></i>
+          Inloggen</a
+        >
+      </div>
       <div class="logo">
-        <h1>LOGO</h1>
+        <i class="fa-light fa-qrcode"></i>
       </div>
       <div class="card">
         <div class="form">
           <form>
             <div class="input">
-              <label for="">Naam Residentie</label>
+              <label for=""
+                ><i class="fa-solid fa-building"></i> Naam Residentie</label
+              >
               <input type="text" />
             </div>
             <div class="input">
-              <label for="">Beschrijf het probleem</label>
-              <textarea name="" id="" rows="5"></textarea>
+              <label for=""
+                ><i class="fa-solid fa-pen-field"></i>Beschrijf het
+                probleem</label
+              >
+              <textarea name="" id="" rows="3"></textarea>
             </div>
             <div class="input">
               <label class="custom-file-upload">
-                <input type="file" />
+                <input
+                  type="file"
+                  accept="image/*"
+                  name="image"
+                  id="file"
+                  onchange="loadFile(event)"
+                />
                 <i class="fa-solid fa-upload"></i>
-                <p>
-                  VOEG OPTIONEEL <br />
-                  EEN FOTO TOE
-                </p>
+                <p for="file">VOEG OPTIONEEL EEN FOTO TOE</p>
               </label>
+            </div>
+            <div class="uploaded-img-container">
+              <img id="output" width="200" />
             </div>
 
             <h2>Uw Contactgegevens:</h2>
             <div class="input">
-              <label for="">Naam</label>
+              <label for=""><i class="fa-solid fa-user"></i>Naam</label>
               <input type="text" />
             </div>
             <div class="input">
-              <label for="">Telefoonnummer</label>
-              <input type="number" />
+              <label for=""
+                ><i class="fa-solid fa-phone"></i>Telefoonnummer</label
+              >
+              <input type="tel" />
             </div>
             <div class="input">
-              <label for="">Email</label>
+              <label for=""><i class="fa-solid fa-envelope"></i>Email</label>
               <input type="email" />
             </div>
 
             <div class="submit">
-              <button type="submit" class="send-btn">Verzenden</button>
+              <button type="submit" class="send-btn">
+                <i class="fa-solid fa-paper-plane"></i>Verzenden
+              </button>
             </div>
           </form>
         </div>
       </div>
     </main>
     <script
-      src="https://kit.fontawesome.com/c3e5479c48.js"
+      src="https://kit.fontawesome.com/6af57cfb71.js"
       crossorigin="anonymous"
     ></script>
+    <script src="main.js"></script>
   </body>
 </html>
