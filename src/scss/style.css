@@ -154,7 +154,7 @@ body {
 .card .input textarea {
   background-color: transparent;
   border: 0;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid gray;
   padding: 0.5rem;
   color: #cfcfcf;
   font-size: 1.1rem;
